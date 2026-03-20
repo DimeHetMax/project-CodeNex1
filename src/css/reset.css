@@ -8,8 +8,11 @@ p {
   margin: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
+h1,
+h2 {
+  font-family: var(--second-family);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 ul {
@@ -32,6 +35,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-body{
+body {
   margin: 0;
 }
