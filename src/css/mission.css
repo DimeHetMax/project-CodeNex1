@@ -1,0 +1,32 @@
+.mission {
+    background-color: var(--color-scheme-1-background);
+    color: var(--color-scheme-1-text);
+    padding: 64px 0;
+}
+
+.mission-text-content {
+    margin-bottom: 32px;
+}
+
+.mission-title-text {
+    margin-bottom: 24px;
+    max-width: 343px;
+
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--color-scheme-1-text);
+}
+
+.mission-text {
+    max-width: 343px;
+
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--color-scheme-1-text);
+}
+
+.mission-img img {
+    width: 100%;
+}
