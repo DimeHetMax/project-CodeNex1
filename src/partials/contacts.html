@@ -1,5 +1,87 @@
-<section>
-    <div class="container">
-        
+<section class="contacts">
+  <div class="container">
+    <div class="contacts-left">
+      <p class="contacts-pretitle">Contacts</p>
+      <h2 class="contacts-title">Get in Touch</h2>
+      <p class="contacts-description">We'd love to hear from you anytime!</p>
+
+      <address class="contacts-address">
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <svg class="contacts-icon" width="24" height="24">
+              <use href="../img/sprite.svg#icon-envelope"></use>
+            </svg>
+            <a class="contacts-link" href="mailto:hello@organicstore.com"
+              >hello@organicstore.com</a
+            >
+          </li>
+          <li class="contacts-item">
+            <svg class="contacts-icon" width="24" height="24">
+              <use href="../img/sprite.svg#icon-phone"></use>
+            </svg>
+            <a class="contacts-link" href="tel:+15553291024"
+              >+1 (555) 329-1024</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <form class="contacts-form">
+        <div class="contacts-form-field">
+          <label class="contacts-label" for="name">Name</label>
+          <input
+            class="contacts-input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Sarah"
+            required
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+          />
+        </div>
+
+        <div class="contacts-form-wrapper">
+          <label class="contacts-label" for="user-email">Email</label>
+          <input
+            class="contacts-input"
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="hello@organic.com"
+            required
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          />
+        </div>
+
+        <div class="contacts-form-wrapper">
+          <label class="contacts-label" for="user-message">Message</label>
+          <textarea
+            class="contacts-message"
+            name="user-message"
+            id="user-message"
+            rows="6"
+            placeholder="Type your message..."
+            maxlength="500"
+            required
+          ></textarea>
+        </div>
+
+        <button class="contacts-btn" type="submit">Submit</button>
+      </form>
     </div>
+
+    <div class="contacts-right">
+      <picture class="contacts-pctr-wrapper">
+        <img
+          class="contacts-img"
+          src="../img/contacts/contacts-imagemob@1x.jpg"
+          srcset="
+            ../img/contacts/contacts-imagemob@1x.jpg 1x,
+            ../img/contacts/contacts-imagemob@2x.jpg 2x
+          "
+          alt="Team of people with organic products."
+        />
+      </picture>
+    </div>
+  </div>
 </section>
