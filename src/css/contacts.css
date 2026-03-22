@@ -1,0 +1,120 @@
+/* #region Contacts */
+
+.contacts .container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  outline: 1px solid red;
+}
+.contacts-pretitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #010400;
+
+  margin-bottom: 16px;
+}
+.contacts-title {
+  font-size: 36px;
+  color: #010400;
+
+  margin-bottom: 24px;
+}
+.contacts-description {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #010400;
+
+  margin-bottom: 32px;
+}
+.contacts-address {
+  font-style: normal;
+  margin-bottom: 40px;
+}
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.contacts-icon {
+  fill: currentColor;
+}
+.contacts-link {
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: #010400;
+}
+/* #endregion */
+
+/* #region Contacts Form */
+.contacts-form {
+}
+.contacts-form-field,
+.contacts-form-wrapper {
+  margin-bottom: 24px;
+}
+.contacts-label {
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: #010400;
+}
+.contacts-input {
+  border: none;
+  border-bottom: 1px solid rgba(1, 4, 0, 0.15);
+  padding: 8px 0px;
+  width: 100%;
+  height: 40px;
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+.contacts-input::placeholder {
+  color: rgba(1, 4, 0, 0.6);
+}
+.contacts-input:focus,
+.contacts-message:focus {
+  outline: none;
+}
+.contacts-message {
+  width: 100%;
+  border: 1px solid rgba(1, 4, 0, 0.15);
+  padding: 12px;
+  height: 166px;
+  resize: none;
+  background: rgba(255, 255, 255, 0);
+}
+.contacts-btn {
+}
+.contacts-error {
+  display: none;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #a00000;
+}
+.contacts-input:invalid:not(:placeholder-shown) + .contacts-error,
+.contacts-message:invalid:not(:placeholder-shown) + .contacts-error {
+  display: block;
+}
+.contacts-input:invalid:not(:placeholder-shown) {
+  border: none;
+  border-bottom: 1px solid #a00000;
+}
+.contacts-input:invalid:not(:placeholder-shown)::placeholder,
+.contacts-message:invalid:not(:placeholder-shown)::placeholder {
+  color: #a00000;
+}
+.contacts-message:invalid:not(:placeholder-shown) {
+  border: 1px solid #a00000;
+}
+
+/* #endregion */
