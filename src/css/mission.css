@@ -23,3 +23,20 @@
 .mission-img img {
     width: 100%;
 }
+
+
+@media only screen and (min-width: 768px) {
+    .mission-text-content {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    .mission-title-text {
+        max-width: 340px;
+    }
+
+    .mission-text {
+        max-width: 340px;
+    }
+}
