@@ -53,10 +53,29 @@
   }
   .footer-socials-list {
     gap: 11px;
-}
+  }
 }
 @media only screen and (min-width: 768px) {
   .footer-nav-list {
     display: flex;
   }
+}
+
+@media only screen and (min-width: 1440px) {
+  .logo-svg {
+    width: 84px;
+    height: 36px;
+  }
+  .footer-content {
+    flex-direction: row;
+    margin-bottom: 80px;
+    gap: 32px;
+  }
+  .link-logo-svg{
+    width: 312px;
+  }
+   .footer-socials-list{
+    width: 312px;
+    justify-content: flex-end;
+   }
 }
