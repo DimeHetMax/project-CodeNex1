@@ -57,7 +57,7 @@
   --color-scheme-5-accent: var(--color-white);
   --color-scheme-5-foreground: var(--color-japanese-laurel-darker);
   --color-error-red: #a00000;
-
+  --hover-link: #808080;
   --font-family: 'Public Sans', sans-serif;
   --second-family: 'Chivo', sans-serif;
 }
@@ -67,4 +67,3 @@ body {
   font-size: 18px;
   line-height: 1.5;
 }
-

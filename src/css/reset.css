@@ -28,6 +28,7 @@ a {
 }
 
 button {
+  display: block;
   cursor: pointer;
 }
 
