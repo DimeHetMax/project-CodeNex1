@@ -5,8 +5,6 @@
 .contacts .container {
   padding-top: 64px;
   padding-bottom: 64px;
-
-  outline: 1px solid red;
 }
 .contacts-pretitle {
   font-weight: 600;
