@@ -1,0 +1,33 @@
+
+.header {
+    background: var(--color-scheme-1-background);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.header-nav {
+    display: none;
+}
+
+.header-order-link {
+    display: none;
+}
+
+.header-logo-icon {
+    fill: var(--color-white);
+}
+
+.header-menu-btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.header-menu-icon {
+    fill: var(--color-white);
+}
