@@ -1,7 +1,8 @@
 .hero {
+  width: 100%;
   padding: 120px 0;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(102, 102, 102, 0.5)),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('/img/hero/Heroimage1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -12,23 +13,34 @@
   (min-resolution: 2dppx) {
   .hero {
     background-image:
-      linear-gradient(rgba(0, 0, 0, 0.5), rgba(102, 102, 102, 0.5)),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('../img/hero/Heroimage2x.jpg');
   }
 }
 @media only screen and (min-width: 768px) {
   .hero {
-    padding: 234px 32px;
+    padding: 234px 0;
     background-position: center top;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero {
+    padding: 326px 0;
   }
 }
 
 .hero-title {
   font-weight: 300;
+  font-size: 40px;
   color: var(--color-white);
   margin-bottom: 8px;
 }
-
+@media only screen and (min-width: 1440px) {
+  .hero-title {
+    font-size: 56px;
+    max-width: 600px;
+  }
+}
 .hero-text {
   font-weight: 300;
   color: var(--color-white);
@@ -36,7 +48,13 @@
 }
 @media only screen and (min-width: 768px) {
   .hero-text {
+    max-width: 611px;
     overflow: hidden;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-text {
+    max-width: 646px;
   }
 }
 .hero-btn {
@@ -53,12 +71,19 @@
     background-color 250ms ease,
     opacity 150ms ease;
 }
+
 @media only screen and (min-width: 768px) {
   .hero-btn {
     width: 254px;
     padding: 8px 32px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .hero-btn {
+    width: 199px;
+  }
+}
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--color-neutral-lightest);
