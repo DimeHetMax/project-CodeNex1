@@ -51,6 +51,7 @@
   text-underline-offset: 4px;
   color: #010400;
 }
+
 /* #endregion */
 
 /* #region Contacts Form */
@@ -155,6 +156,24 @@
   .contacts-btn {
     padding: 6px 12px;
     margin-bottom: 24px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .contacts .container {
+    display: flex;
+    gap: 24px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .contacts-left {
+    width: 644px;
+  }
+  .contacts-title {
+    font-size: 48px;
+  }
+  .contacts-btn {
+    max-width: 198px;
+    margin: 0;
   }
 }
 /* #endregion */
