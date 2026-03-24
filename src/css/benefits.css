@@ -1,8 +1,7 @@
-/* --- Benefits --- */
+/* --- Benefits Mob --- */
 
 .benefits-section {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding: 64px 16px;
   background-color: var(--color-japanese-laurel);
 }
 
@@ -59,4 +58,24 @@
 .benefit-text {
   font-size: 16px;
   color: var(--color-scheme-3-text);
+}
+/* --- Tablet (768px+) --- */
+@media screen and (min-width: 768px) {
+  .benefits-section {
+    padding: 64px 32px;
+  }
+
+  .benefits-container {
+    max-width: 704px;
+  }
+
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 80px;
+  }
+
+  .benefits-item {
+    width: calc((100% - 80px) / 2);
+  }
 }
