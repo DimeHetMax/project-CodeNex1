@@ -71,7 +71,7 @@
 
 /* ========== Tablet ========== */
 
-/*
+
 @media (min-width: 768px) {
   .faq-section {
     padding: 64px 0;
@@ -142,11 +142,11 @@
     transform: rotate(180deg);
   }
 }
-*/
+
 
 /* ========== Desktop ========== */
 
-/*
+
 @media (min-width: 1440px) {
   .faq-section {
     padding: 112px 0;
@@ -226,4 +226,4 @@
     transform: rotate(180deg);
   }
 }
-*/
+
