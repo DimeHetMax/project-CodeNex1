@@ -30,7 +30,7 @@
 }
 
 .hero-title {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 40px;
   color: var(--color-white);
   margin-bottom: 8px;
@@ -42,7 +42,7 @@
   }
 }
 .hero-text {
-  font-weight: 300;
+  font-weight: 400;
   color: var(--color-white);
   margin-bottom: 16px;
 }
