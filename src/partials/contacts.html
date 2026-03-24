@@ -9,7 +9,7 @@
         <ul class="contacts-list">
           <li class="contacts-item">
             <svg class="contacts-icon" width="24" height="24">
-              <use href="../img/sprite.svg#icon-envelope"></use>
+              <use href="/img/sprite.svg#icon-envelope"></use>
             </svg>
             <a class="contacts-link" href="mailto:hello@organicstore.com"
               >hello@organicstore.com</a
@@ -17,7 +17,7 @@
           </li>
           <li class="contacts-item">
             <svg class="contacts-icon" width="24" height="24">
-              <use href="../img/sprite.svg#icon-phone"></use>
+              <use href="/img/sprite.svg#icon-phone"></use>
             </svg>
             <a class="contacts-link" href="tel:+15553291024"
               >+1 (555) 329-1024</a
@@ -78,12 +78,26 @@
 
     <div class="contacts-right">
       <picture class="contacts-pctr-wrapper">
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/contacts/contacts-imagedesk@1x.jpg 1x,
+            /img/contacts/contacts-imagedesk@2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/contacts/contacts-imagetab@1x.jpg 1x,
+            /img/contacts/contacts-imagetab@2x.jpg 2x
+          "
+        />
         <img
           class="contacts-img"
-          src="../img/contacts/contacts-imagemob@1x.jpg"
+          src="/img/contacts/contacts-imagemob@1x.jpg"
           srcset="
-            ../img/contacts/contacts-imagemob@1x.jpg 1x,
-            ../img/contacts/contacts-imagemob@2x.jpg 2x
+            /img/contacts/contacts-imagemob@1x.jpg 1x,
+            /img/contacts/contacts-imagemob@2x.jpg 2x
           "
           alt="Team of people with organic products."
         />
