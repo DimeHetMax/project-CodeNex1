@@ -1,25 +1,46 @@
 .hero {
   padding: 120px 0;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(102, 102, 102, 0.5)),
     url('/img/hero/Heroimage1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(102, 102, 102, 0.5)),
+      url('../img/hero/Heroimage2x.jpg');
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding: 234px 32px;
+    background-position: center top;
+  }
+}
 
 .hero-title {
+  font-weight: 300;
   color: var(--color-white);
   margin-bottom: 8px;
 }
 
 .hero-text {
+  font-weight: 300;
   color: var(--color-white);
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
-
+@media only screen and (min-width: 768px) {
+  .hero-text {
+    overflow: hidden;
+  }
+}
 .hero-btn {
-  display: block;
+  text-align: center;
   width: 100%;
   padding: 6px 32px;
   border-radius: 6px;
@@ -31,6 +52,12 @@
   transition:
     background-color 250ms ease,
     opacity 150ms ease;
+}
+@media only screen and (min-width: 768px) {
+  .hero-btn {
+    width: 254px;
+    padding: 8px 32px;
+  }
 }
 .hero-btn:hover,
 .hero-btn:focus {
