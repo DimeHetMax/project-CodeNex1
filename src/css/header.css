@@ -1,16 +1,18 @@
 
 .header {
     background: var(--color-scheme-1-background);
+    align-items: center;
+    margin-left: auto;
+    padding: 6px 0;
 }
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6px 0;
 }
 
-.header-nav {
+.header-nav-list {
     display: none;
 }
 
@@ -19,6 +21,9 @@
 }
 
 .header-logo-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     fill: var(--color-white);
 }
 
@@ -29,5 +34,87 @@
 }
 
 .header-menu-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     fill: var(--color-white);
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .header-order-link {
+        display: inline-block;
+        padding: 4px 24px;
+
+        background: var(--color-japanese-laurel);
+        border: 1px solid var(--color-japanese-laurel);
+        border-radius: 6px;
+
+        color: var(--color-white);
+        font-size: 16px;
+
+        text-decoration: none;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-order-link:hover,
+    .header-order-link:focus {
+        background-color: var(--color-scheme-3-text);
+        color: var(--color-neutral-darkest);
+    }
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1440px) {
+
+    .header-menu-btn {
+        display: none;
+    }
+
+    .header-nav-list {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        font-size: 16px;
+
+        color: var(--color-scheme-1-text);
+    }
+
+    .header-nav-link {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-nav-link:hover,
+    .header-nav-link:focus {
+        color: #808080;
+    }
+
+    .header-nav-link:active {
+        color: #999999;
+    }
+
+    .header-nav-wrapper {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-left: 32px;
+        }
+
 }
