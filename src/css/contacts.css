@@ -50,8 +50,16 @@
   text-decoration: underline;
   text-underline-offset: 4px;
   color: #010400;
-}
 
+  transition: opacity 250ms ease;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  opacity: 0.5;
+}
+.contacts-link:active {
+  opacity: 0.6;
+}
 /* #endregion */
 
 /* #region Contacts Form */
