@@ -33,11 +33,16 @@
     max-width: 343px;
     margin: 0 auto 24px;
 }
+@media screen and (min-width: 768px) {
+    .feedback-description {
+        max-width: 644px;
+    }
+} 
 @media screen and (min-width: 1440px) {
     .feedback-description {
         margin-bottom: 80px;
     }
-}
+} 
 
 .feedback-list {
     list-style: none;
@@ -101,7 +106,18 @@
 .feedback-item-description {
     font-size: 18px;
     font-weight: 400;
+    max-width: 279px;
     color: var(--color-neutral-darkest);
+}
+@media screen and (min-width: 768px) {
+    .feedback-item-description {
+        max-width: 276px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .feedback-item-description{
+        max-width: 246px;
+    }
 }
 
 .feedback-author {
