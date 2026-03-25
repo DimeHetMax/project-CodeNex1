@@ -1,5 +1,5 @@
     /* ========== Mobile ========== */
-/*
+
 .faq-section {
   padding: 64px 0;
   background-color: var(--color-japanese-laurel-light);
@@ -68,7 +68,6 @@
 .faq-item.is-open .faq-icon {
   transform: rotate(180deg);
 }
-*/
 
 /* ========== Tablet ========== */
 @media (min-width: 768px) {
@@ -145,7 +144,7 @@
 
 /* ========== Desktop ========== */
 
-/*
+
 @media (min-width: 1440px) {
   .faq-section {
     padding: 112px 0;
@@ -225,4 +224,4 @@
     transform: rotate(180deg);
   }
 }
-*/
+
