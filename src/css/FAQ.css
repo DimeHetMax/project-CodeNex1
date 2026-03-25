@@ -50,6 +50,7 @@
 .faq-icon {
   flex-shrink: 0;
   transition: transform 0.3s ease;
+  fill: var(--color-white);
 }
 
 .faq-answer {
