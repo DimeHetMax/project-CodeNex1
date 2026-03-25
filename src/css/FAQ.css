@@ -13,6 +13,7 @@
 
 .faq-description {
   margin-top: 8px;
+  max-width: 362px;
 }
 
 .faq-list {
