@@ -33,6 +33,12 @@
     max-width: 343px;
     margin: 0 auto 24px;
 }
+@media screen and (min-width: 768px) {
+    .feedback-description {
+        min-width: 644px;
+    }
+}
+
 @media screen and (min-width: 1440px) {
     .feedback-description {
         margin-bottom: 80px;
