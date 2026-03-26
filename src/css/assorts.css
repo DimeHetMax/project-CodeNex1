@@ -1,11 +1,9 @@
 .assorts {
     background-color: #d1ddcc;
+        padding-top: 64px;
+            padding-bottom: 64px;
 }
 
-.assortment-container {
-    padding-top: 64px;
-    padding-bottom: 64px;
-}
 
 .assortment-subtitle {
     font-family: "Public Sans", sans-serif;
@@ -129,6 +127,7 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 16px;
+    margin: 0 0 16px;
 }
 
 .product-unit {
@@ -148,7 +147,7 @@
     font-size: 14px;
     line-height: 150%;
     color: #010400;
-    margin: 0 0 16px;
+    /* margin: 0 0 16px; */
     max-width: 270px;
 
 }
