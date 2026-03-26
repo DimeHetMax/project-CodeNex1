@@ -70,10 +70,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 16px;
+    row-gap: 32px;
   }
 
   .benefits-item {
-    width: calc((100% - 80px) / 2);
+    width: calc((100% - 16px) / 2);
   }
 }
 
