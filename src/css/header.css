@@ -192,7 +192,6 @@
     align-items: center;
     gap: 32px;
     margin-top: 64px;
-    margin-bottom: 32px;
     color: var(--color-scheme-1-text);
 }
 
@@ -200,6 +199,7 @@
     display: inline-block;
     width: 100%;
     padding: 6px 12px;
+    margin-top: 32px;
 
     background: var(--color-japanese-laurel);
     border: 1px solid var(--color-japanese-laurel);
