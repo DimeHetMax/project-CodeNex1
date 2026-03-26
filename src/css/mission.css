@@ -34,6 +34,7 @@
 
     .mission-title-text {
         max-width: 340px;
+        margin-bottom: 0;
     }
 
     .mission-text {
