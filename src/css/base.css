@@ -61,9 +61,17 @@
   --font-family: 'Public Sans', sans-serif;
   --second-family: 'Chivo', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
+}
+@media screen and (max-width: 1439px) {
+  body.menu-open {
+    overflow: hidden;
+  }
 }

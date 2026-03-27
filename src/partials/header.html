@@ -3,7 +3,7 @@
     <div class="header-container">
       <a
         class="header-logo"
-        href="/index.html"
+        href="./index.html"
         aria-label="Organic Shop home page"
       >
         <svg class="header-logo-icon" width="142" height="60">
@@ -14,32 +14,38 @@
         <nav class="header-nav" aria-label="Main navigation">
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a class="header-nav-link" href="/index.html">Home</a>
+              <a class="header-nav-link" href="#home">Home</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">Mission</a>
+              <a class="header-nav-link" href="#mission">Mission</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">Benefits</a>
+              <a class="header-nav-link" href="#benefits">Benefits</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">Assortment</a>
+              <a class="header-nav-link" href="#assortment">Assortment</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">Feedbacks</a>
+              <a class="header-nav-link" href="#feedbacks">Feedbacks</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">FAQ</a>
+              <a class="header-nav-link" href="#faq">FAQ</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">Contacts</a>
+              <a class="header-nav-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="header-wrapper">
-        <a class="header-order-link" href="#">Order</a>
-        <button class="header-menu-btn" type="button" aria-label="Open menu">
+        <a class="header-order-link" href="#assortment">Order</a>
+        <button
+          class="header-menu-btn"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="header-menu-icon" width="32" height="32">
             <use href="/img/sprite.svg#icon-menu"></use>
           </svg>
@@ -48,3 +54,48 @@
     </div>
   </div>
 </header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <div class="container">
+    <div class="mob-menu-wrapper">
+      <a
+        class="menu-logo"
+        href="./index.html"
+        aria-label="Organic Shop home page"
+      >
+        <svg class="menu-logo-icon" width="142" height="60">
+          <use href="/img/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <button class="close-menu-btn" type="button" aria-label="Close menu">
+        <svg class="menu-icon" width="32" height="32">
+          <use href="/img/sprite.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="mob-menu-list">
+      <li class="header-nav-item">
+        <a class="menu-nav-link" href="#home">Home</a>
+      </li>
+      <li class="header-nav-item">
+        <a class="menu-nav-link" href="#mission">Mission</a>
+      </li>
+      <li class="header-nav-item">
+        <a class="menu-nav-link" href="#benefits">Benefits</a>
+      </li>
+      <li class="header-nav-item">
+        <a class="menu-nav-link" href="#assortment">Assortment</a>
+      </li>
+      <li class="header-nav-item">
+        <a class="menu-nav-link" href="#feedbacks">Feedbacks</a>
+      </li>
+      <li class="header-nav-item">
+        <a class="menu-nav-link" href="#faq">FAQ</a>
+      </li>
+      <li class="header-nav-item">
+        <a class="menu-nav-link" href="#contacts">Contacts</a>
+      </li>
+    </ul>
+    <a class="menu-order-link" href="#assortment">Order</a>
+  </div>
+</div>

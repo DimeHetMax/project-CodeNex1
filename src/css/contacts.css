@@ -1,10 +1,8 @@
 /* #region Contacts */
 .contacts {
-  background: #e8eee5;
-}
-.contacts .container {
   padding-top: 64px;
   padding-bottom: 64px;
+  background: #e8eee5;
 }
 .contacts-pretitle {
   font-weight: 600;
@@ -15,6 +13,7 @@
   margin-bottom: 16px;
 }
 .contacts-title {
+  font-weight: 400;
   font-size: 36px;
   color: #010400;
 
@@ -50,11 +49,24 @@
   text-decoration: underline;
   text-underline-offset: 4px;
   color: #010400;
+
+  transition: opacity 250ms ease;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  opacity: 0.5;
+}
+.contacts-link:active {
+  opacity: 0.6;
 }
 /* #endregion */
 
 /* #region Contacts Form */
 
+.contacts-form {
+  position: relative;
+  margin-bottom: 32px;
+}
 .contacts-form-field,
 .contacts-form-wrapper {
   margin-bottom: 24px;
@@ -114,8 +126,6 @@
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
-
-  margin-bottom: 32px;
 }
 .contacts-btn:hover,
 .contacts-btn:focus {
@@ -131,24 +141,62 @@
 }
 .contacts-error {
   display: none;
+  position: absolute;
+  left: 0;
   font-size: 12px;
   line-height: 1.5;
   color: #a00000;
 }
-.contacts-input:invalid:not(:placeholder-shown) + .contacts-error,
-.contacts-message:invalid:not(:placeholder-shown) + .contacts-error {
+.contacts-form-field:has(.contacts-input:invalid:not(:placeholder-shown))
+  .contacts-error,
+.contacts-form-wrapper:has(.contacts-input:invalid:not(:placeholder-shown))
+  .contacts-error,
+.contacts-form-wrapper:has(.contacts-message:invalid:not(:placeholder-shown))
+  .contacts-error {
   display: block;
 }
 .contacts-input:invalid:not(:placeholder-shown) {
   border: none;
   border-bottom: 1px solid #a00000;
+  color: #a00000;
 }
-.contacts-input:invalid:not(:placeholder-shown)::placeholder,
-.contacts-message:invalid:not(:placeholder-shown)::placeholder {
+.contacts-input:invalid::placeholder:not(:placeholder-shown),
+.contacts-message:invalid::placeholder:not(:placeholder-shown) {
   color: #a00000;
 }
 .contacts-message:invalid:not(:placeholder-shown) {
   border: 1px solid #a00000;
+  color: #a00000;
 }
 
+@media only screen and (min-width: 768px) {
+  .contacts-form {
+    margin-bottom: 24px;
+  }
+  .contacts-btn {
+    padding: 6px 12px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .contacts {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .contacts .container {
+    display: flex;
+    gap: 24px;
+  }
+  .contacts-form {
+    margin: 0;
+  }
+  .contacts-left {
+    width: 644px;
+  }
+  .contacts-title {
+    font-size: 48px;
+  }
+  .contacts-btn {
+    max-width: 198px;
+  }
+}
 /* #endregion */

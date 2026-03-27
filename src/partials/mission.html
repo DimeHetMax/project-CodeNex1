@@ -1,4 +1,4 @@
-<section class="mission">
+<section class="mission" id="mission">
   <div class="container">
     <div class="mission-text-content">
       <h2 class="mission-title-text">
@@ -12,10 +12,30 @@
       </p>
     </div>
     <div class="mission-img">
-      <img
-        src="/img/mission/mission-people.jpg"
-        alt="People preparing organic food together"
-      />
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/mission/mission-desktop.jpg    1x,
+            /img/mission/mission-desktop@2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/mission/mission-tablet.jpg    1x,
+            /img/mission/mission-tablet@2x.jpg 2x
+          "
+        />
+        <img
+          src="../img/mission/mission-mobile.jpg"
+          srcset="
+            /img/mission/mission-mobile.jpg    1x,
+            /img/mission/mission-mobile@2x.jpg 2x
+          "
+          alt="People preparing organic food together"
+        />
+      </picture>
     </div>
   </div>
 </section>
