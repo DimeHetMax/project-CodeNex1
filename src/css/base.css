@@ -69,6 +69,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
+  background-color: var(--color-japanese-laurel-darker);
 }
 @media screen and (max-width: 1439px) {
   body.menu-open {

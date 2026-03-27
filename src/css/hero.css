@@ -98,7 +98,10 @@
   border: 1px solid var(--color-white);
   background-color: var(--color-white);
   color: var(--color-neutral-darkest);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 768px) {
   .hero-btn {
@@ -116,9 +119,11 @@
 .hero-btn:hover,
 .hero-btn:focus {
   color: var(--color-white);
+  border: 1px solid var(--color-japanese-laurel);
   background-color: var(--color-japanese-laurel);
 }
 
 .hero-btn:active {
-  background-color: var(--color-japanese-laurel-light);
+  border: 1px solid var(--color-japanese-laurel);
+  border-color: var(--color-japanese-laurel);
 }
