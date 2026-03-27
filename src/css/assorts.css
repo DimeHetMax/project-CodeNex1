@@ -175,7 +175,7 @@
     width: 100%;
     display: block;
     cursor: pointer;
-    transition: background-color .25s cubic-bezier(.4, 0, .2, 1);
+    /* transition: background-color .25s cubic-bezier(.4, 0, .2, 1); */
     margin-top: auto;
     border: 1px solid rgba(1, 4, 0, 0.15);
     border-radius: 6px;
@@ -189,4 +189,5 @@
     color: #ffffff;
     outline: none;
     transition: color .25s cubic-bezier(.4, 0, .2, 1);
+        transition: background-color .25s cubic-bezier(.4, 0, .2, 1);
 }
