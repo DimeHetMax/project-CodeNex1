@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  max-width: 375OX;
+  max-width: 375px;
   padding: 183px 0;
   margin: 0 auto;
   background-color: var(--color-japanese-laurel-light);
@@ -11,7 +11,7 @@
   background-position: center;
   background-size: cover;
 }
-@media (-min-device-pixel-ratio: 2),
+@media (device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+@media screen and (min-width: 768px) and (device-pixel-ratio: 2),
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 1440px) and (min-resolution: 192dpi),
   screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .hero {
@@ -115,6 +115,7 @@
 
 .hero-btn:hover,
 .hero-btn:focus {
+  color: var(--color-white);
   background-color: var(--color-japanese-laurel);
 }
 
