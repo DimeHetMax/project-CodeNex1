@@ -1,30 +1,63 @@
 .hero {
-  padding: 120px 0;
+  width: 100%;
+  max-width: 375OX;
+  padding: 183px 0;
+  margin: 0 auto;
+  background-color: var(--color-japanese-laurel-light);
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/img/hero/Heroimage1x.jpg');
+    url('/img/hero/Hero-mobile1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-@media (-webkit-min-device-pixel-ratio: 2),
+@media (-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('/img/hero/Heroimage2x.jpg');
+      url('/img/hero/Hero-mobile@2x.jpg');
   }
 }
 @media only screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     padding: 234px 0;
     background-position: center top;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/img/hero/Hero-tablet1x.jpg');
   }
 }
+
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/img/hero/Hero-tablet@2x.jpg');
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .hero {
+    max-width: 1440px;
     padding: 326px 0;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/img/hero/Heroimage1x.jpg');
+  }
+}
+
+@media screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (min-resolution: 192dpi),
+  screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/img/hero/Heroimage@2x.jpg');
   }
 }
 
@@ -65,9 +98,7 @@
   border: 1px solid var(--color-white);
   background-color: var(--color-white);
   color: var(--color-neutral-darkest);
-  transition:
-    background-color 250ms ease,
-    opacity 150ms ease;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 768px) {
   .hero-btn {
@@ -84,9 +115,9 @@
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--color-neutral-lightest);
+  background-color: var(--color-japanese-laurel);
 }
 
 .hero-btn:active {
-  background-color: var(--color-neutral-lightest);
+  background-color: var(--color-japanese-laurel-light);
 }
